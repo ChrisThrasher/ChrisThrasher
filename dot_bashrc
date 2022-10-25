@@ -1,0 +1,29 @@
+FetchProjects() {
+  for dir in ~/Projects/* ; do
+    cd $dir
+    if [ -d .git ] ; then
+      echo $dir
+      git fetch --prune --all
+      echo ""
+    fi
+    cd - > /dev/null
+  done
+}
+
+UpdatePackages() {
+  sudo apt update
+  sudo apt upgrade -y
+  sudo apt autoremove -y
+}
+
+alias cd..='cd ..'
+alias cd...='cd ../..'
+
+alias gs='git status'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gfp='git fetch --prune'
+alias gpp='git pull --prune'
+alias gitk='gitk --all'
+
+alias grepr='grep -Iirn --exclude-dir=.git --exclude-dir=build'
