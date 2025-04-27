@@ -1,8 +1,4 @@
 ### Welcome 👋
 
-Hey I'm Chris. I'm a software developer who loves writing C++.
-
-- 🎮 Helping develop the next generation of [SFML](https://github.com/SFML/SFML.git)
-- 💬 Ask me about how to write better CMake 
-
-Check out what I've been working on!
+Hey I'm Chris!
+You can find me on GitHub maintaining [SFML](https://github.com/SFML/SFML) and [Catch2](https://github.com/catchorg/Catch2).
